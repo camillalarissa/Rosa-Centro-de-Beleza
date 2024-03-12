@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+/*SCROLL*/
+
+.hidden {
+    opacity: 0;
+    filter: blur(12px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+
+}
+
+.hidden-welcome :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.hidden-child :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.hidden-child :nth-child(3) {
+    transition-delay: 600ms;
+}
+
+.hidden-child :nth-child(4) {
+    transition-delay: 800ms;
+}
+
+.hidden-child :nth-child(5) {
+    transition-delay: 1000ms;
+}
+
+.hidden-child :nth-child(6) {
+    transition-delay: 1200ms;
+}
+
+.hidden-child :nth-child(7) {
+    transition-delay: 1400ms;
+}
+
+.hidden-child :nth-child(8) {
+    transition-delay: 1600ms;
+}
+
+
+.hidden-footer :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.hidden-footer :nth-child(3) {
+    transition-delay: 800ms;
+}
+
+.hidden-footer :nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+
+
+
+/* ESTILOS HEADER */
+header {
+    background: linear-gradient(to bottom, #F4DBDD, #fff);
+
+}
+
+.container {
+    padding: 20px 0;
+}
+
+
+.container img {
+    max-width: 80%;
+    height: auto;
+
+}
+
+.container .button {
+    margin-top: 50px;
+}
+
+/*ESTILO BUTTON*/
+.btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all .2s;
+    text-decoration: none;
+}
+
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #DFB5B8;
+    color: #fff;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+/* Estilos das Seções */
+.welcome-section,
+.specialties-section,
+.services-section,
+.about-section,
+.testimonials-section {
+    padding: 40px 0;
+}
+
+.services-section img {
+    max-width: 100%;
+}
+
+/*ESTILO DO WELCOME*/
+
+.welcome-section {
+    background: url(images/back.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #644A4D;
+    padding: 40px 0;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.welcome-section h2 {
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+
+.welcome-section span {
+    color: #DEB3B6;
+}
+
+.welcome-section p {
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+
+}
+
+/*ESTILO SERVIÇOS REALIZADOS*/
+
+.services-section {
+    background: linear-gradient(to bottom, #F4DBDD, #fff);
+}
+
+.services-section P {
+    font-size: 1.5rem;
+    color: #644A4D;
+    text-align: center;
+}
+
+.services-section h2 {
+    font-size: 4rem;
+    color: #644A4D;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.services-section span {
+    color: #DEB3B6;
+}
+
+.services-section .service {
+    text-align: center;
+}
+
+.services-section .service img {
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.services-section .service:hover img {
+    transform: scale(1.5);
+}
+
+.services-section .service p {
+    margin-top: 15px;
+
+}
+
+/* ESTILOS QUEM SOU */
+
+.about-h1 {
+    font-size: 3rem;
+    color: #644A4D;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.about-h1 span {
+    color: #DEB3B6;
+}
+
+.about-p {
+
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    color: #644A4D;
+}
+
+
+/* ESTILOS DEPOIMENTO */
+.depo-h1 {
+    font-size: 3rem;
+    color: #644A4D;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.depo-h1 span {
+    color: #DEB3B6;
+}
+
+
+
+
+
+/* Estilos do Footer */
+footer {
+    background: linear-gradient(to bottom, #F4DBDD, #fff);
+    color: #644A4D;
+    padding: 40px 0;
+}
+
+footer h4 {
+    color: #A64360;
+
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+.disclaimer {
+    font-style: italic;
+    font-weight: 800;
+    color: #A64360;
+    margin-top: 3rem;
+}
+
+.rights {
+    font-size: 14px;
+}
+
+.footer-p {
+    margin-top: 5rem;
+}
+
+
+/*RESPONSIVIDADE DO BUTTON*/
+
+@media (max-width: 300px) {
+
+    .container-img {
+        margin-left: 50px;
+    }
+
+    .btn {
+        font-size: 12px;
+        /* ajuste o tamanho da fonte conforme necessário */
+        padding: 5px 10px;
+        /* ajuste o padding conforme necessário */
+
+    }
+}
+
+/*RESPONSIVIDADE DO WELCOME*/
+
+@media (max-width: 297px) {
+    .welcome-section h2 {
+        font-size: 3rem;
+
+    }
+}
+
+/*RESPONSIVIDADE DO SERVIÇOS*/
+
+@media (max-width: 324px) {
+
+    .services-section p {
+        font-size: 1rem;
+
+    }
+
+    .services-section h2 {
+        font-size: 3rem;
+
+    }
+
+    .depo-h1 {
+        font-size: 2rem;
+    }
+}
